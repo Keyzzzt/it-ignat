@@ -1,17 +1,28 @@
 .message {
-
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
 }
 
 .imageAndText {
-
+    display: flex;
 }
 
 .imageAndText img {
-
+    width: 48px;
+    height: 48px;
+    margin-left: 10px;
+    align-self: flex-end;
 }
 
 .text {
-
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #0066CC;
+    order: -1;
+    padding: 7px 13px 8px 13px;
+    border-radius: 5px;
 }
 
 .text:after {
@@ -19,13 +30,24 @@
 }
 
 .name {
-
+    color: #fff;
+    line-height: 22px;
+    font-weight: 600;
+    font-size: 18px;
 }
 
 .messageText {
-
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .time {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    align-self: flex-end;
+    margin-bottom: -15px;
+    margin-left: -35px;
 
 }
