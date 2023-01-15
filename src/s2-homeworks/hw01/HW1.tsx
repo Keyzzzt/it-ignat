@@ -28,6 +28,8 @@ export type MessageType = {
     message: Message
 }
 
+
+
 // структуру объекта не менять
 export const message0: MessageType = {
     id: 0,
@@ -60,11 +62,11 @@ const HW1 = () => {
                 {/*проверка отображения (не менять)*/}
                 <div>
                     <Message message={message0} />
-                    <FriendMessage message={friendMessage0} />
+                    {/*<FriendMessage message={friendMessage0} />*/}
                 </div>
 
                 {/*для автоматической проверки дз (не менять)*/}
-                <MessageSender M={Message} />
+                {/*<MessageSender M={Message} />*/}
             </div>
         </div>
     )
