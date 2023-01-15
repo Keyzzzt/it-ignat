@@ -60,13 +60,13 @@ const HW1 = () => {
             <div className={s2.hwTitle}>Homework #1</div>
             <div className={s2.hw}>
                 {/*проверка отображения (не менять)*/}
-                <div>
+                <div className={s2.messages}>
                     <Message message={message0} />
-                    {/*<FriendMessage message={friendMessage0} />*/}
+                    <FriendMessage message={friendMessage0} />
                 </div>
 
                 {/*для автоматической проверки дз (не менять)*/}
-                {/*<MessageSender M={Message} />*/}
+                <MessageSender M={Message} />
             </div>
         </div>
     )
