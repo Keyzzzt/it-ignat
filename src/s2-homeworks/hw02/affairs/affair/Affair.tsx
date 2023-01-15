@@ -6,12 +6,12 @@ import s2 from '../Affairs.module.css'
 type AffairPropsType = {
     // key не нужно типизировать
     affair: AffairType
-    deleteAffairCallback: any // need to fix any
+    deleteAffairCallback: (_id: number) => void // need to fix any
 }
 
 function Affair(props: AffairPropsType) {
-    const deleteCallback = () => {
-        // need to fix
+    const deleteCallback = (_id: number) => {
+        props.deleteAffairCallback(_id)
     }
 
     const nameClass = s.name + ' ' + s2[props.affair.priority]
@@ -19,30 +19,14 @@ function Affair(props: AffairPropsType) {
     const affairClass = s.affair + ' ' + s2[props.affair.priority]
 
     return (
-        <div
-            id={'hw2-affair-' + props.affair._id}
-            className={affairClass}
-        >
-            <div id={'hw2-name-' + props.affair._id} className={nameClass}>
-                {/*создаёт студент*/}
-
-                {/**/}
-            </div>
-            <div id={'hw2-priority-' + props.affair._id} hidden>
-                {/*создаёт студент*/}
-
-                {/**/}
-            </div>
-
+        <div id={'hw2-affair-' + props.affair._id}className={affairClass}>
+            <div id={'hw2-name-' + props.affair._id} className={nameClass}>{props.affair.name}</div>
+            <div id={'hw2-priority-' + props.affair._id}>{props.affair.priority}</div>
             <button
                 id={'hw2-button-delete-' + props.affair._id}
                 className={buttonClass}
-                // need to fix
-
-            >
-                {/*текст кнопки могут изменить студенты*/}
+                onClick={() => deleteCallback(props.affair._id)}>
                 X
-                {/**/}
             </button>
         </div>
     )
