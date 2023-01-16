@@ -35,6 +35,7 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         className={({ isActive }) =>
                             isActive ? s.active : undefined
                         }
+                        end
                     >
                         Pre-junior
                     </NavLink>
@@ -45,6 +46,7 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         className={({ isActive }) =>
                             isActive ? s.active : undefined
                         }
+                        end
                     >
                         Junior
                     </NavLink>
@@ -55,6 +57,7 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         className={({ isActive }) =>
                             isActive ? s.active : undefined
                         }
+                        end
                     >
                         Junior PLUS
                     </NavLink>
