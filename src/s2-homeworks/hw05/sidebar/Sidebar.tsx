@@ -33,7 +33,7 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         to={PATH.PRE_JUNIOR}
                         onClick={handleClose}
                         className={({ isActive }) =>
-                            isActive ? s.active : undefined
+                            isActive ? s.active : ''
                         }
                         end
                     >
@@ -44,7 +44,7 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         to={PATH.JUNIOR}
                         onClick={handleClose}
                         className={({ isActive }) =>
-                            isActive ? s.active : undefined
+                            isActive ? s.active : ''
                         }
                         end
                     >
@@ -55,7 +55,7 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         to={PATH.JUNIOR_PLUS}
                         onClick={handleClose}
                         className={({ isActive }) =>
-                            isActive ? s.active : undefined
+                            isActive ? s.active : ''
                         }
                         end
                     >
