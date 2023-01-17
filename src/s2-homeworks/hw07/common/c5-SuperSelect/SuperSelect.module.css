@@ -1,9 +1,18 @@
 .select {
+    padding: 2px 82px 5px 10px;
+    outline: none;
+    cursor: pointer;
+
 }
 
 .select:focus {
+    cursor: pointer;
+
 }
 
 
 .option:hover {
+    /*cursor: pointer;*/
+    color: red;
+
 }
