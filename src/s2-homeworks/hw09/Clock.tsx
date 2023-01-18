@@ -36,8 +36,6 @@ function Clock() {
     const minutes = +date.getMinutes() < 10 ? `0${date.getMinutes()}` : date.getMinutes()
     const seconds = +date.getSeconds() < 10 ? `0${date.getSeconds()}` : date.getSeconds()
 
-    console.log(date.getDate())
-
     const day = +date.getDate() < 10 ? `0${date.getDate()}` : date.getDate()
     const month = +date.getMonth() < 10 ? `0${date.getMonth() + 1}` : date.getMonth()
     const year = +date.getFullYear() < 10 ? `0${date.getFullYear()}` : date.getFullYear() < 100 ? `00${date.getFullYear()}` : date.getFullYear() < 1000 ? `000${date.getFullYear()}` : date.getFullYear()
